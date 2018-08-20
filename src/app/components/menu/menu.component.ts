@@ -12,9 +12,17 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  /**
+   * Emit filter event
+   * @param {string} value
+   */
   public filterCars = (value: string) => {
       this.sortValue.emit(value);
   }
+  /**
+   * Emit change view event
+   */
   public changeView = () => {
     this.viewValue.emit();
   }

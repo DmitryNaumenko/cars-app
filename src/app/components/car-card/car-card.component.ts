@@ -15,6 +15,9 @@ export class CarCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Emit delete car event
+   */
   public onCarDelete = () => {
     this.deleteCar.emit(this.carIndex);
   }
