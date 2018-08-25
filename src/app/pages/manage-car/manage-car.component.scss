@@ -5,9 +5,26 @@
     flex-direction: column;
     width: 400px;
     margin: 10px auto;
-    input {
-      padding: 10px 4px;
+    .text-input {
+      padding: 10px 12px;
       margin: 2px 0;
+      outline: none;
+    }
+    .input-holder {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .year {
+        width: 45%;
+      }
+      .color {
+        width: 45%;
+        padding: 7px 4px;
+      }
+    }
+    .submit {
+      padding: 10px 0;
     }
   }
 }
