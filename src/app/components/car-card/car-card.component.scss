@@ -9,7 +9,7 @@
   position: relative;
   top: 0;
   left: 0;
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   padding: 0 20px;
   .car-title {
     padding: 20px 0 0 0;
@@ -35,10 +35,19 @@
     }
   }
   &:hover {
-    box-shadow: 0 0 5px $main-leather-color;
+    box-shadow: 10px 10px 0 $main-dark-color, -10px -10px 0 $main-red-color;
     top: 2px;
     left: 3px;
     background-color: #ffffff;
+    border-color: $main-dark-color $main-red-color $main-red-color $main-dark-color;
+    &:after {
+      content: normal;
+      width: 140px;
+      height: 240px;
+      background-color: $main-red-color;
+      position: relative;
+      top: 10px;
+    }
     .color {
       border: 0;
       width: calc(100% + 40px);

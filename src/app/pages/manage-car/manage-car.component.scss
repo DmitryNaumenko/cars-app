@@ -1,0 +1,13 @@
+.create-holder {
+  text-align: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px auto;
+    input {
+      padding: 10px 4px;
+      margin: 2px 0;
+    }
+  }
+}

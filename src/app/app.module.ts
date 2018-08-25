@@ -16,6 +16,8 @@ import { FavoritesComponent } from './pages/favorites/favorites.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ManageCarComponent } from './pages/manage-car/manage-car.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     FavoritesComponent,
     HomeComponent,
     SideBarComponent,
-    LoaderComponent
+    LoaderComponent,
+    NotFoundComponent,
+    ManageCarComponent
   ],
   imports: [
     BrowserModule,
