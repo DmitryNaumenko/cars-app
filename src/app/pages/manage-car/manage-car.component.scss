@@ -1,3 +1,5 @@
+@import "./../../../styles";
+
 .create-holder {
   text-align: center;
   form {
@@ -25,6 +27,12 @@
     }
     .submit {
       padding: 10px 0;
+    }
+    .ng-invalid.ng-touched {
+      border: 2px solid $main-red-color;
+    }
+    .ng-valid.ng-touched {
+      border: 2px solid $main-success-color;
     }
   }
 }
