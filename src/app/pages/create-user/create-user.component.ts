@@ -26,7 +26,7 @@ export class CreateUserComponent implements OnInit {
   }
 
   onCreate = () => {
-    console.log(this.userForm.value);
+    console.log(this.userForm);
     this.userForm.reset();
   }
 
