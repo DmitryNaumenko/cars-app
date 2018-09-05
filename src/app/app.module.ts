@@ -21,6 +21,8 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ManageCarComponent } from './pages/manage-car/manage-car.component';
 
+import { CarService } from './services/car.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +49,7 @@ import { ManageCarComponent } from './pages/manage-car/manage-car.component';
       preloadingStrategy: PreloadAllModules
     })
   ],
-  providers: [],
+  providers: [CarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

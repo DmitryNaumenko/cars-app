@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { CarService } from '../../services/car.service';
 
 @Component({
   selector: 'app-manage-car',
@@ -8,13 +9,13 @@ import { NgForm } from '@angular/forms';
 })
 export class ManageCarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private carService: CarService) { }
 
   ngOnInit() {
   }
 
   onSubmit = (form: NgForm) => {
-    console.log(form);
+    this.carService.addCar(form.value);
   }
 
 }
